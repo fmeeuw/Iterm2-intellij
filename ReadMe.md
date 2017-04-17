@@ -3,7 +3,7 @@ This repository contains a script, `handleFileIterm2.sh` which can be configured
 This is useful for when you have compilation errors and want to quickly jump to the error.
 
 Make sure to configure the script to set the `runIntelliJIdea` flag to 0 when you want to run IntelliJ, an example is provided.
-Tested on Mac, with IntelliJ 15.
+Tested with IntelliJ IDEA Ultimate 2017.1.
 
 ## Configuring Iterm2
 
