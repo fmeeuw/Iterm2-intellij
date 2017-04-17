@@ -1,8 +1,8 @@
 # IntelliJ Idea integration in Iterm2
 
 This script will open a file in IntelliJ when cmd+clicking in Iterm2 on a filename, and jumps to the corresponding lineNumber.
-It is usefull for when you have compilation errors and want to quickly jump to the error.
-When to open IntelliJ can be configured for specific directories, if there is no match it will fall back to opening the file with the default application.
+It is useful for when you have compilation errors and want to quickly jump to the error.
+When to open IntelliJ can be configured for specific directories in the script, if there is no match it will fall back to opening the file with the default application.
 
 Tested on Mac, with IntelliJ 15.
 
