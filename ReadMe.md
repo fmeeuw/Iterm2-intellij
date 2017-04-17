@@ -1,9 +1,8 @@
 # IntelliJ Idea integration in Iterm2
+This repository contains a script, `handleFileIterm2.sh` which can be configured to be executed by Iterm2, when cmd+clicking on a filename. This script will open the file in IntelliJ and jumps to the corresponding lineNumber, if it matches the IntelliJ directories configured in the script. OtherWise it will fall back to opening the file with the default application.
+This is useful for when you have compilation errors and want to quickly jump to the error.
 
-This script will open a file in IntelliJ when cmd+clicking in Iterm2 on a filename, and jumps to the corresponding lineNumber.
-It is useful for when you have compilation errors and want to quickly jump to the error.
-When to open IntelliJ can be configured for specific directories in the script, if there is no match it will fall back to opening the file with the default application.
-
+Make sure to configure the script to set the `runIntelliJIdea` flag to 0 when you want to run IntelliJ, an example is provided.
 Tested on Mac, with IntelliJ 15.
 
 ## Configuring Iterm2
@@ -15,4 +14,5 @@ Tested on Mac, with IntelliJ 15.
 ![alt tag](SemanticHistory.png)
 
 ## Debugging
+
 By supplying a 6th argument to the handleFileIterm2.sh it will dump some variables to a file called dump.txt in the same directory as the handleFileIterm2.sh script.
