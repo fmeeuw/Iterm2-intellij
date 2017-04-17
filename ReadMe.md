@@ -9,7 +9,7 @@ Tested on Mac, with IntelliJ 15.
 
 1. Go to Preferences > Profiles and select the profile you want to configure.
 2. Go to Advanced and jump to the `Semantic History` section.
-3. Select `Run command...` in the dropdown and paste the following line: `./handleFileIterm2.sh "\1" "\2" "\3" "\4" "\5" "debug"`.
+3. Select `Run command...` in the dropdown and paste the following line: `./handleFileIterm2.sh "\1" "\2" "\3" "\4" "\5"`.
 
 ![alt tag](SemanticHistory.png)
 
