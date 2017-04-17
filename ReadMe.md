@@ -12,5 +12,7 @@ Tested on Mac, with IntelliJ 15.
 2. Go to Advanced and jump to the `Semantic History` section.
 3. Select `Run command...` in the dropdown and paste the following line: `./handleFileIterm2.sh "\1" "\2" "\3" "\4" "\5" "debug"`.
 
+![alt tag](SemanticHistory.png)
+
 ## Debugging
 By supplying a 6th argument to the handleFileIterm2.sh it will dump some variables to a file called dump.txt in the same directory as the handleFileIterm2.sh script.
