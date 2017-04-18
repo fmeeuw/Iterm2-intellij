@@ -1,6 +1,5 @@
 # IntelliJ Idea integration in Iterm2
-This repository contains a script, `handleFileIterm2.sh` which can be configured to be executed by Iterm2, when cmd+clicking on a filename. This script will open the file in IntelliJ and jumps to the corresponding lineNumber, if it matches the IntelliJ directories configured in the script. OtherWise it will fall back to opening the file with the default application.
-This is useful for when you have compilation errors and want to quickly jump to the error.
+This repository contains a script, `handleFileIterm2.sh` which can be configured to be executed by Iterm2, when cmd+clicking on a filename. This script will open the file in IntelliJ and jumps to the corresponding lineNumber, if it matches the IntelliJ directories configured in the script. (You can configure this to you needs) Otherwise it will fall back to opening the file with the default application. This is useful for when you have compilation errors and want to quickly jump to the error.
 
 Make sure to configure the script to set the `runIntelliJIdea` flag to 0 when you want to run IntelliJ, an example is provided.
 Tested with IntelliJ IDEA Ultimate 2017.1.
