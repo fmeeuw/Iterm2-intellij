@@ -8,22 +8,20 @@ workingDirectory=$5
 debugging=$6
 
 if [[ -d $fileName ]]; then
-    fileIsDirectory=0
-else
     fileIsDirectory=1
+else
+    fileIsDirectory=0
 fi
 if [[ -e $fileName ]]; then
-    fileExists=0
-else
     fileExists=1
+else
+    fileExists=0
 fi
 
 # Intellij Idea Integration (Configure to your needs)
-runIntelliJIdea=1
-if [[ ! $fileIsDirectory -eq 0 ]] && [[ $fileExists -eq 0 ]] && [[ $lineNumber ]]; then
-  if [[ $fileName == /Users/Somebody/IntelliJProjects/* || $fileName == /Users/Somebody/Projects/* ]]; then
-      runIntelliJIdea=0
-  fi
+runIntelliJIdea=0
+if [[ ! $fileIsDirectory -eq 1 ]] && [[ $fileExists -eq 1 ]] && [[ $lineNumber ]]; then
+    runIntelliJIdea=1
 fi
 intelliJIdeaCommand="/Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea  --line $lineNumber $fileName"
 
@@ -31,7 +29,7 @@ intelliJIdeaCommand="/Applications/IntelliJ\ IDEA.app/Contents/MacOS/idea  --lin
 fallBackCommand="open $fileName"
 
 #Main logic
-if [[ $runIntelliJIdea -eq 0 ]]; then
+if [[ $runIntelliJIdea -eq 1 ]]; then
   eval "$intelliJIdeaCommand" &
 else
   eval "$fallBackCommand" &
