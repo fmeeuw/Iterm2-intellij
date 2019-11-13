@@ -6,7 +6,7 @@ Tested with IntelliJ IDEA Ultimate 2017.1.
 
 1. Go to Preferences > Profiles and select the profile you want to configure.
 2. Go to Advanced and jump to the `Semantic History` section.
-3. Select `Run command...` in the dropdown and paste the following line: `./handleFileIterm2.sh "\1" "\2" "\3" "\4" "\5"`.
+3. Select `Run command...` in the dropdown and paste the following line: `~/handleFileIterm2.sh "\1" "\2" "\3" "\4" "\5"`.
 
 ![alt tag](SemanticHistory.png)
 
